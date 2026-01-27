@@ -1,0 +1,285 @@
+/* =====================
+   GLOBAL
+===================== */
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background: #F4F5F7;
+    color: #1A1A1A;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+h1, h2, h3 {
+    font-family: 'IBM Plex Arabic', sans-serif;
+    font-weight: 700;
+}
+
+/* =====================
+   HEADER / NAVBAR
+===================== */
+.header {
+    background: #0F1A2B;
+    color: white;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.header .logo {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.header nav a {
+    color: rgba(255,255,255,0.85);
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header nav a:hover {
+    color: #C7A14A;
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+.hero {
+    background:
+        linear-gradient(rgba(15,26,43,0.92), rgba(15,26,43,0.92)),
+        url('https://images.unsplash.com/photo-1529101091764-c3526daf38fe');
+    background-size: cover;
+    background-position: center;
+    padding: 140px 40px;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.hero p {
+    max-width: 720px;
+    margin: auto;
+    font-size: 18px;
+    color: rgba(255,255,255,0.85);
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.buttons {
+    margin-top: 35px;
+}
+
+.btn {
+    padding: 13px 32px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 6px;
+    display: inline-block;
+}
+
+.primary {
+    background: #C7A14A;
+    color: #0F1A2B;
+}
+
+.primary:hover {
+    background: #b8933f;
+}
+
+.secondary {
+    border: 1.5px solid #C7A14A;
+    color: #C7A14A;
+}
+
+.secondary:hover {
+    background: #C7A14A;
+    color: #0F1A2B;
+}
+
+.small {
+    padding: 9px 20px;
+    font-size: 13px;
+}
+
+/* =====================
+   CARDS / FEATURES
+===================== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 80px 60px;
+    background: #FFFFFF;
+}
+
+.card {
+    background: #FAFAFA;
+    padding: 30px;
+    border-radius: 4px;
+    border: 1px solid #E6E6E6;
+}
+
+.card h3 {
+    color: #1F3D2B;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #444;
+}
+
+/* =====================
+   FILES / TRACKING
+===================== */
+.files {
+    background: #0F1A2B;
+    color: white;
+    padding: 80px 60px;
+}
+
+.files h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.files ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+}
+
+.files li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 15px;
+}
+
+/* =====================
+   CONSTITUTION
+===================== */
+.constitution {
+    padding: 90px 60px;
+    text-align: center;
+    background: #F4F5F7;
+}
+
+.constitution blockquote {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1F3D2B;
+    max-width: 800px;
+    margin: auto;
+}
+
+.constitution p {
+    max-width: 700px;
+    margin: 25px auto 0;
+    font-size: 15px;
+    color: #444;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+    background: #0F1A2B;
+    color: rgba(255,255,255,0.75);
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* =====================
+   PROPOSE PAGE
+===================== */
+
+.propose-hero {
+    background: #0F1A2B;
+    color: white;
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.propose-hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.propose-hero p {
+    max-width: 700px;
+    margin: auto;
+    color: rgba(255,255,255,0.85);
+    font-size: 16px;
+}
+
+.propose-form {
+    background: #FFFFFF;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.propose-form form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.propose-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #1F3D2B;
+}
+
+.propose-form input,
+.propose-form select,
+.propose-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+.propose-form textarea {
+    resize: vertical;
+}
+
+.propose-note {
+    background: #F4F5F7;
+    padding: 12px;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+    border-right: 4px solid #C7A14A;
+}
+
+.success-message {
+    background: #E8F5EC;
+    color: #1F3D2B;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-right: 5px solid #2E7D32;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 3px;
+}

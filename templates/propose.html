@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}قدّم مقترحك{% endblock %}
+
+{% block content %}
+
+<section class="propose-hero">
+    <h1>قدّم مقترحك الإصلاحي</h1>
+    <p>
+        هذه المنصة تتيح للمواطنين تقديم مقترحات
+        إصلاحية تُعرض بصيغة مؤسسية وتُراجع من
+        لجنة مختصة.
+    </p>
+</section>
+
+<section class="propose-form">
+    <form method="POST">
+
+        <label>عنوان المقترح</label>
+        <input type="text" name="title" placeholder="مثال: تنظيم التعيينات الحكومية" required>
+
+        <label>نوع المقترح</label>
+        <select name="category" required>
+            <option value="">اختر النوع</option>
+            <option>تشريعي</option>
+            <option>خدمي</option>
+            <option>اقتصادي</option>
+            <option>إداري</option>
+        </select>
+
+        <label>تفاصيل المقترح</label>
+        <textarea name="description" rows="6"
+        placeholder="اشرح المقترح بشكل مختصر وواضح" required></textarea>
+
+
+
+    <label>المحافظة</label>
+    <select name="governorate">
+    <option value="">اختر المحافظة</option>
+    <option>بغداد</option>
+    <option>البصرة</option>
+    <option>نينوى</option>
+    <option>أربيل</option>
+    <option>النجف</option>
+    <option>كربلاء</option>
+    <option>ذي قار</option>
+    <option>ميسان</option>
+    <option>واسط</option>
+    <option>ديالى</option>
+    <option>الأنبار</option>
+    <option>بابل</option>
+    <option>الديوانية</option>
+    <option>كركوك</option>
+    <option>صلاح الدين</option>
+    <option>السليمانية</option>
+    <option>دهوك</option>
+    <option>المثنى</option>
+    </select>
+
+
+        <div class="propose-note">
+            🔒 لا يتم جمع أي معلومات شخصية
+        </div>
+
+        <button type="submit" class="btn primary">
+            إرسال المقترح
+        </button>
+        {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="success-message">
+      {{ messages[0] }}
+    </div>
+  {% endif %}
+{% endwith %}
+
+    </form>
+</section>
+
+{% endblock %}

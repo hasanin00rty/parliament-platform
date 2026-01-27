@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}المنصة التشريعية{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=IBM+Plex+Arabic:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">⚖️ المنصة التشريعية</div>
+    <nav>
+        <a href="/">الرئيسية</a>
+        <a href="/about">من نحن</a>
+        <a href="/shadow-parliament">البرلمان الظل</a>
+        <a href="/oversight">الرقابة</a>
+        <a href="/constitution">الدستور</a>
+        <a href="/propose">قدّم مقترحك</a>
+        <a href="/proposals">مقترحات قيد النقاش</a>
+
+    </nav>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+    <p>
+        منصة سياسية مستقلة تهدف إلى ترسيخ مفاهيم
+        التشريع، الرقابة، والشفافية بعيدًا عن
+        الشخصنة والانتماءات.
+    </p>
+    <span>© جميع الحقوق محفوظة</span>
+</footer>
+
+</body>
+</html>

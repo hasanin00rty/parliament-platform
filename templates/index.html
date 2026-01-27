@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>{{ title }}</h1>
+    <p>{{ desc }}</p>
+
+    <div class="buttons">
+        <a href="/shadow-parliament" class="btn primary">استعرض الملفات التشريعية</a>
+        <a href="/about" class="btn secondary">اقرأ رؤيتنا</a>
+    </div>
+</section>
+
+<section class="cards">
+    <div class="card"><h3>التشريع</h3><p>اقتراح قوانين واقعية تستند إلى الدستور.</p></div>
+    <div class="card"><h3>الرقابة</h3><p>تحليل الأداء العام ومساءلة القرار السياسي.</p></div>
+    <div class="card"><h3>الرصد</h3><p>متابعة الوعود الحكومية وتحليل التنفيذ.</p></div>
+    <div class="card"><h3>الشفافية</h3><p>عرض البيانات بلغة واضحة.</p></div>
+</section>
+
+<section class="files">
+    <h2>ملفات قيد المتابعة</h2>
+    <ul>
+        <li>مشروع قانون الإصلاح الإداري</li>
+        <li>قرار الموازنة العامة</li>
+        <li>ملف الخدمات الأساسية</li>
+        <li>تشريعات معلّقة</li>
+    </ul>
+</section>
+
+<section class="constitution">
+    <blockquote>"السيادة للقانون، والشعب مصدر السلطات"</blockquote>
+</section>
+{% endblock %}

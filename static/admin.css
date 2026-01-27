@@ -1,0 +1,16 @@
+body {
+  background:#0B1423;
+  color:white;
+  font-family:Cairo;
+  padding:40px;
+}
+input, textarea {
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+button {
+  background:#C7A14A;
+  border:none;
+  padding:10px;
+}

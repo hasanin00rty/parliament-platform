@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}مقترحات قيد النقاش{% endblock %}
+
+{% block content %}
+<section class="cards">
+  {% for p in proposals %}
+  <div class="card">
+    <h3>{{ p[1] }}</h3>
+    <p><strong>النوع:</strong> {{ p[2] }}</p>
+    <p>{{ p[3] }}</p>
+  </div>
+  {% endfor %}
+</section>
+{% endblock %}
