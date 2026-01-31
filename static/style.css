@@ -54,7 +54,7 @@ h1, h2, h3 {
 .hero {
     background:
         linear-gradient(rgba(15,26,43,0.92), rgba(15,26,43,0.92)),
-        url('https://images.unsplash.com/photo-1529101091764-c3526daf38fe');
+        url("images/hero.jpg");
     background-size: cover;
     background-position: center;
     padding: 140px 40px;
