@@ -25,23 +25,31 @@ h1, h2, h3 {
 .header {
     background: #0F1A2B;
     color: white;
-    padding: 18px 60px;
+    padding: 18px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(255,255,255,0.08);
+    flex-wrap: wrap;
 }
 
 .header .logo {
     font-size: 22px;
     letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.header nav {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header nav a {
     color: rgba(255,255,255,0.85);
-    margin-right: 25px;
+    margin-right: 15px;
     font-size: 15px;
     font-weight: 600;
+    margin-bottom: 8px;
 }
 
 .header nav a:hover {
@@ -57,21 +65,21 @@ h1, h2, h3 {
         url("images/hero.jpg");
     background-size: cover;
     background-position: center;
-    padding: 140px 40px;
+    padding: 100px 5%;
     text-align: center;
     color: white;
 }
 
 .hero h1 {
-    font-size: 44px;
-    margin-bottom: 25px;
+    font-size: 36px;
+    margin-bottom: 20px;
     letter-spacing: 0.5px;
 }
 
 .hero p {
-    max-width: 720px;
+    max-width: 90%;
     margin: auto;
-    font-size: 18px;
+    font-size: 16px;
     color: rgba(255,255,255,0.85);
 }
 
@@ -79,11 +87,11 @@ h1, h2, h3 {
    BUTTONS
 ===================== */
 .buttons {
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 .btn {
-    padding: 13px 32px;
+    padding: 12px 28px;
     border-radius: 3px;
     font-weight: 600;
     font-size: 14px;
@@ -121,26 +129,26 @@ h1, h2, h3 {
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 30px;
-    padding: 80px 60px;
+    gap: 20px;
+    padding: 60px 5%;
     background: #FFFFFF;
 }
 
 .card {
     background: #FAFAFA;
-    padding: 30px;
+    padding: 20px;
     border-radius: 4px;
     border: 1px solid #E6E6E6;
 }
 
 .card h3 {
     color: #1F3D2B;
-    margin-bottom: 12px;
-    font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .card p {
-    font-size: 15px;
+    font-size: 14px;
     color: #444;
 }
 
@@ -150,47 +158,47 @@ h1, h2, h3 {
 .files {
     background: #0F1A2B;
     color: white;
-    padding: 80px 60px;
+    padding: 60px 5%;
 }
 
 .files h2 {
-    margin-bottom: 25px;
-    font-size: 28px;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .files ul {
     list-style: none;
     padding: 0;
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .files li {
     padding: 10px 0;
     border-bottom: 1px solid rgba(255,255,255,0.1);
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /* =====================
    CONSTITUTION
 ===================== */
 .constitution {
-    padding: 90px 60px;
+    padding: 60px 5%;
     text-align: center;
     background: #F4F5F7;
 }
 
 .constitution blockquote {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     color: #1F3D2B;
-    max-width: 800px;
+    max-width: 90%;
     margin: auto;
 }
 
 .constitution p {
-    max-width: 700px;
-    margin: 25px auto 0;
-    font-size: 15px;
+    max-width: 90%;
+    margin: 20px auto 0;
+    font-size: 14px;
     color: #444;
 }
 
@@ -200,7 +208,7 @@ h1, h2, h3 {
 .footer {
     background: #0F1A2B;
     color: rgba(255,255,255,0.75);
-    padding: 35px;
+    padding: 25px 5%;
     text-align: center;
     font-size: 13px;
     border-top: 1px solid rgba(255,255,255,0.08);
@@ -209,36 +217,35 @@ h1, h2, h3 {
 /* =====================
    PROPOSE PAGE
 ===================== */
-
 .propose-hero {
     background: #0F1A2B;
     color: white;
     text-align: center;
-    padding: 80px 40px;
+    padding: 60px 5%;
 }
 
 .propose-hero h1 {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 15px;
 }
 
 .propose-hero p {
-    max-width: 700px;
+    max-width: 90%;
     margin: auto;
     color: rgba(255,255,255,0.85);
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .propose-form {
     background: #FFFFFF;
-    padding: 60px 40px;
+    padding: 40px 5%;
     display: flex;
     justify-content: center;
 }
 
 .propose-form form {
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .propose-form label {
@@ -282,4 +289,67 @@ h1, h2, h3 {
     font-weight: 600;
     text-align: center;
     border-radius: 3px;
+}
+
+/* =====================
+   MEDIA QUERIES
+===================== */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 5%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .header nav {
+        justify-content: center;
+    }
+
+    .header nav a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .cards {
+        padding: 40px 5%;
+        gap: 15px;
+    }
+
+    .card h3 {
+        font-size: 15px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .files h2 {
+        font-size: 20px;
+    }
+
+    .constitution blockquote {
+        font-size: 20px;
+    }
+
+    .constitution p {
+        font-size: 13px;
+    }
+
+    .propose-hero h1 {
+        font-size: 24px;
+    }
+
+    .propose-hero p {
+        font-size: 14px;
+    }
+
+    .propose-form {
+        padding: 30px 5%;
+    }
 }
