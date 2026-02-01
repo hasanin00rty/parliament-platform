@@ -6,8 +6,14 @@ import config
 from flask import flash
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static", static_url_path="/static")
+
 app.secret_key = config.SECRET_KEY
+
+@app.route('/sw.js')
+def service_worker():
+    return app.send_static_file('sw.js')
+
 
 # ---------- DATABASE ----------
 def get_db():
